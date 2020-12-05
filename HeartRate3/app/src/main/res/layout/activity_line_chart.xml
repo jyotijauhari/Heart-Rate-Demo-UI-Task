@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EE5082CC"
+    tools:context=".LineChartActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/buttoncircle"
+            android:text="Day"
+            android:textColor="#97ED32"></Button>
+
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="4dp"
+                 android:background="@drawable/buttoncircle"
+                 android:text="Week"
+                 android:textColor="#97ED32"></Button>
+
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="4dp"
+                 android:background="@drawable/buttoncircle"
+                 android:text="Month"
+                 android:textColor="#97ED32"></Button>
+
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="4dp"
+                 android:background="@drawable/buttoncircle"
+                 android:text="Year"
+                 android:textColor="#97ED32"></Button>
+
+         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Yesterday"
+             android:layout_gravity="center"
+             android:textColor="#FFFFFF"
+             ></TextView>
+
+         <com.github.mikephil.charting.charts.LineChart
+             android:layout_width="match_parent"
+             android:layout_height="300dp"
+             android:layout_margin="10dp"
+             android:id="@+id/lineChart"
+             tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:text="Total"
+             android:textColor="#F4EEEE"
+             android:background="#80000000"></TextView>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:orientation="horizontal">
+
+
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:textColor="#ffffff"
+                 android:text="60 BPM"/>
+
+
+
+             <View
+                 android:layout_width="1dp"
+                 android:layout_height="match_parent"
+                 android:background="#92162CA3"/>
+
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:textColor="#ffffff"
+                 android:text="60 BPM"/>
+
+             <View
+                 android:layout_width="1dp"
+                 android:layout_height="match_parent"
+                 android:background="#92162CA3"/>
+
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:textColor="#ffffff"
+                 android:text="60 BPM"/>
+
+         </LinearLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:text="Exercise HR Zone"
+             android:paddingTop="5dp"
+             android:textColor="#F4EEEE"
+             android:background="#80000000"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                     android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_shape"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="0Minutes"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="WarmUp "
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circleblue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="0Minutes"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="FatBurn "
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circlegreen"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="0Minutes"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Aerobic "
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circleorange"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="0Minutes"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Anaerobic "
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circlered"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="0Minutes"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="High "
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:text="Exercise HR Report"
+             android:paddingTop="5dp"
+             android:textColor="#ffffff"
+             android:background="#80000000"></TextView>
+         
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummyText"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:text="End"
+             android:paddingTop="5dp"
+             android:textColor="#F4EEEE"
+             android:background="#80000000"></TextView>
+
+
+     </LinearLayout>
+
+
+
+
+    </ScrollView>
+</LinearLayout>
+
+
+
